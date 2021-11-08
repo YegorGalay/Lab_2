@@ -9,10 +9,8 @@ import java.awt.event.ActionListener;
 import java.util.Objects;
 
 @SuppressWarnings("serial")
-//Главный класс приложения, он же класс фрейма
 public class MainFrame extends JFrame {
 
-    //Размеры окна приложения в виде констант
     private static final int WIDTH = 600;
     private static final int HEIGHT = 420;
 
@@ -42,7 +40,7 @@ public class MainFrame extends JFrame {
     //Переменная, указывающая, какая из формул является  активной  в  данный  момент
     private int formulaId = 1;
     private int memoryId= 1;
-
+//Переменные для для хранения результатов
     private Double mem1 = (double) 0;
     private Double mem2 = (double) 0;
     private Double mem3 = (double) 0;
@@ -384,7 +382,6 @@ public class MainFrame extends JFrame {
 
     }
 
-    //Главный метод класса
     public static void main(String[] args) {
         MainFrame frame = new MainFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
